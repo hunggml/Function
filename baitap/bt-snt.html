@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let n = +prompt('nhap so');
+let count =0
+let snt = 2
+
+function isPrime(num) {
+    for (let i = 2; i < snt; i++) {
+        if (num < 2) {
+            return false;
+        } else if (num % i == 0) {
+            return false;
+        }
+        return true;
+    }
+}
+while (count < n) {
+    if (isPrime(snt)) {
+        document.write(snt + ',');
+        count++;
+    }
+    snt++;
+}
+</script>
+
+</body>
+</html>
