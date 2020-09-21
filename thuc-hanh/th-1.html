@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function confirmAnswer(answer) {
+
+        let result = "";
+        if (answer) {
+            result = 'ẾCH XAI LỪN!'
+        } else {
+            result = 'Maybe latter!'
+        }
+        return result;
+
+    }
+
+    let confirmm = confirm("Shall we play a game?")
+    let theAnswer = confirmAnswer(confirmm);
+    alert(theAnswer);
+</script>
+</body>
+</html>

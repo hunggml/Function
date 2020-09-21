@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  Square of <input type="text" id="iputt" style="width: 50px" oninput="changee()"> :  <span id="resultt"> </span>
+<script> 
+    sqr()
+    function sqr(numbet) {
+        let resultt = Math.pow(numbet, 2)
+        return resultt
+
+    }
+    function changee() {
+        let input = document.getElementById('iputt').value;
+        let kq = sqr(input);
+        let result = document.getElementById('resultt').innerHTML = kq
+    }
+</script>
+</body>
+</html>
