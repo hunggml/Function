@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35fae321-2022-4dd7-97e2-cf2261b998f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baitap/bt-feet-foot.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thuc-hanh/th-findMin.html" beforeDir="false" afterPath="$PROJECT_DIR$/thuc-hanh/th-findMin.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600651925097</updated>
       <workItem from="1600651926140" duration="8020000" />
-      <workItem from="1600682168518" duration="750000" />
+      <workItem from="1600682168518" duration="2270000" />
     </task>
     <servers />
   </component>

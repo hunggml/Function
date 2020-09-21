@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>FeetToMeter</h1>
+<label for="feet1">FEET : </label> <input type="number" id="feet1"  oninput="feetTometer()">
+<p>Meter :  <span id="meter1"></span></p>
+<hr>
+<h1>MeterToFeet</h1>
+<label for="meter2">METER : </label><input type="number" id="meter2" oninput="meterTofeet()">
+<p>Feet : <span id="feet2"></span> </p>
+<script>
+function searchFeet(feet1) {
+    let kq1 = 0.305 * feet1
+    return kq1
+}
+function feetTometer() {
+    let meter1 = document.getElementById('feet1').value;
+    let result = searchFeet(meter1);
+    document.getElementById('meter1').innerHTML = result
+}
+</script>
+
+<script>
+    function searchMeter(meter2) {
+        let kq2 = 3.279 * meter2
+        return kq2
+    }
+    function meterTofeet() {
+        let feet2 = document.getElementById("meter2").value;
+        let result2 = searchMeter(feet2);
+        document.getElementById('feet2').innerHTML = result2
+    }
+</script>
+</body>
+</html>
