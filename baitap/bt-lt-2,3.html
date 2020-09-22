@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="giaithua">
+<input type="button" onclick="Caculate()" value="Calculate">
+<p>Giai thua : <span id="kqq"></span> </p>
+<script>
+    function Caculate() {
+        let result = 1
+        let numm = document.getElementById('giaithua').value;
+        for (let i = 1; i <= numm ; i++) {
+            result *= i
+
+        }
+        document.getElementById('kqq').innerHTML = result
+    }
+</script>
+</body>
+</html>

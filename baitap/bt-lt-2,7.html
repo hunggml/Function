@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    changeAdd();
+    function changeAdd() {
+        let num1 = +prompt('nhap so thu 1');
+        let num2 = +prompt('nhap so thu 2');
+        let result = num2 +',' + num1
+        let temp = num1
+
+        num1 = num2
+        num2 = temp
+        alert(result)
+    }
+
+</script>
+</body>
+</html>

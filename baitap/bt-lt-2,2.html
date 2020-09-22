@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Dien tich hinh tron </h1>
+<strong>nhap chu vi :</strong>
+<input type="text" id="chuvi">
+<input type="button" onclick="tinh()" value="Calculate">
+<p>Dien tich la : <span id="result"></span></p>
+<hr>
+<h1> Chu vi hinh tron </h1>
+<strong>nhap chu vi :</strong>
+<input type="text" id="chuvi2">
+<input type="button" onclick="tinh2()" value="Calculate">
+<p>Chu vi la : <span id="result2"></span></p>
+
+
+<script>
+    let pi = 3.14
+
+    function tinh() {
+        let chuvi = document.getElementById('chuvi').value;
+        let ketqua = chuvi * chuvi * pi;
+        document.getElementById('result').innerHTML = ketqua;
+    }
+</script>
+
+<script>
+    function tinh2() {
+        let chuvi2 = document.getElementById('chuvi2').value;
+        let ketqua2 = 2*chuvi2 * pi;
+        document.getElementById('result2').innerHTML = ketqua2;
+
+    }
+
+</script>
+</body>
+</html>

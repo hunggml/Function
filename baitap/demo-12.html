@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>YearToCentury</h1>
+<input id="enterYear" type="text">
+<input type="button" value="Change" onclick="clickclick()">
+<p id="result"></p>
+<script>
+    function clickclick() {
+        let abc = document.getElementById('enterYear').value;
+        let century = Math.ceil(abc/100)
+        document.getElementById('result').innerHTML = century + ' Century'
+
+    }
+
+</script>
+
+</body>
+</html>
