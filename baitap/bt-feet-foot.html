@@ -8,7 +8,9 @@
 <h1>FeetToMeter</h1>
 <label for="feet1">FEET : </label> <input type="number" id="feet1"  oninput="feetTometer()">
 <p>Meter :  <span id="meter1"></span></p>
+////////
 <hr>
+////////
 <h1>MeterToFeet</h1>
 <label for="meter2">METER : </label><input type="number" id="meter2" oninput="meterTofeet()">
 <p>Feet : <span id="feet2"></span> </p>
@@ -23,7 +25,9 @@ function feetTometer() {
     document.getElementById('meter1').innerHTML = result
 }
 </script>
+/////////
 
+/////////
 <script>
     function searchMeter(meter2) {
         let kq2 = 3.279 * meter2

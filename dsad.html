@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị dãy số nguyên tố</title>
+</head>
+<body>
+<script>
+    let number = +prompt("nhập số lượng từ bàn phìm:");
+    let Coun = 0;
+    let n = 2;//là biến lưu dãy số nguyên tố
+
+    while (Coun < number) {
+        let flag;
+        if (n < 2) {
+            flag = false;
+        } else {
+            for (let i = 2; i < n; i++) {
+                if (n % i == 0) {//không là số nguyên tố
+                    flag = false;
+                }
+            }
+        }
+        if (flag == false) {
+            n++;
+        } else {
+            document.write( n + " , " );
+            n++;
+            Coun++;
+        }
+    }
+
+</script>
+</body>
+</html>

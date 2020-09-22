@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="takeStar">
+<input type="button" value="CheckStar" onclick="CheckStar()">
+<p id="ouput"></p>
+<script>
+    function CheckStar() {
+
+
+        let arrStar = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+        let arrStarCheck = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", " Leo"]
+        let search = document.getElementById('takeStar').value;
+        let index = arrStar.indexOf(search);
+        if (index !==-1){
+            document.getElementById('ouput').innerHTML = arrStarCheck[index]
+        }
+        else {
+            document.getElementById('ouput').innerHTML = 'Dont Find Star!'
+        }
+
+    }
+
+</script>
+</body>
+</html>
